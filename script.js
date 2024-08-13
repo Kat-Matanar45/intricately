@@ -23,7 +23,10 @@ switch(true) {
         break
 }
 
-
+let langsArray = []; 
+langsArray["ru"] = ["Понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+langsArray["en"] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+console.log(langsArray[lang]);
 
 let namePerson = "Александр";
 namePerson == "Артем" ? console.log('Директор') : namePerson == "Александр" ? console.log('Преподаватель') : (namePerson != "Артем") && (namePerson != "Александр") ? console.log('Студент') : stop
