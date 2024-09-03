@@ -64,3 +64,15 @@ let seconds = function() {
 };
 
 console.log('Сегодня: ' + dateTime.day  + ', ' + dateTime.number + " " + dateTime.month + " " + dateTime.year + " года " + dateTime.hour + " " + declination() + ' ' + dateTime.minutes + minutes() + dateTime.seconds + seconds());
+
+let td = new Date('9:5:3 1.6.2019');
+console.log(td.toLocaleString("ru", {timeZone: 'Europe/Moscow'}));
+
+let renewal = function () {
+    dateTime.seconds ++;
+    alert('Сегодня: ' + dateTime.day  + ', ' + dateTime.number + " " + dateTime.month + " " + dateTime.year + " года " + dateTime.hour + " " + declination() + ' ' + dateTime.minutes + minutes() + dateTime.seconds + seconds());
+}
+
+let timerId = setInterval(renewal(), 1000);
+timerId = setInterval(renewal(), 1000);
+timerId = setInterval(renewal(), 1000);
